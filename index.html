@@ -1,98 +1,13 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Crypto Intel Weekly</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      background: #f9f9f9;
-    }
-    h1 {
-      color: #333;
-    }
-    .price-table {
-      margin-top: 20px;
-      border-collapse: collapse;
-      width: 100%;
-    }
-    .price-table th, .price-table td {
-      border: 1px solid #ccc;
-      padding: 8px;
-      text-align: left;
-    }
-    .price-table th {
-      background-color: #eee;
-    }
-  </style>
-</head>
-<body>
-  <h1>Crypto Intel Weekly</h1>
-  <p>Date Range: October 31 – November 07, 2025</p>
-  <p>Fear & Greed Index: 33 (FEAR)</p>
-
-  <table class="price-table">
-    <thead>
-      <tr>
-        <th>Token</th>
-        <th>Price (USD)</th>
-        <th>24h Change (%)</th>
-        <th>ATH</th>
-        <th>ATL</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>BTC</td><td id="btc-price"></td><td id="btc-change"></td><td id="btc-ath"></td><td id="btc-atl"></td></tr>
-      <tr><td>ETH</td><td id="eth-price"></td><td id="eth-change"></td><td id="eth-ath"></td><td id="eth-atl"></td></tr>
-      <tr><td>PLS</td><td id="pls-price"></td><td id="pls-change"></td><td id="pls-ath"></td><td id="pls-atl"></td></tr>
-      <tr><td>HEX</td><td id="hex-price"></td><td id="hex-change"></td><td id="hex-ath"></td><td id="hex-atl"></td></tr>
-      <tr><td>USDT</td><td id="usdt-price"></td><td id="usdt-change"></td><td id="usdt-ath"></td><td id="usdt-atl"></td></tr>
-      <tr><td>DAI</td><td id="dai-price"></td><td id="dai-change"></td><td id="dai-ath"></td><td id="dai-atl"></td></tr>
-    </tbody>
-  </table>
-
-  <script>
-    
+<html><head><title>Crypto Intel Weekly</title></head><body><h1>Crypto Intel Weekly</h1><p>Date Range: October 31 – November 07, 2025</p><p>Fear & Greed Index: 33 (FEAR)</p>
+<script>
         const realTimePrices = {
-            btc: { price: 110305, change: 0.3697510989090207, ath: 73750, atl: 67.81 },
-            eth: { price: 3890.21, change: 0.8500956091488598, ath: 4878, atl: 0.43 },
+            btc: { price: 110325, change: 0.3880626904535172, ath: 73750, atl: 67.81 },
+            eth: { price: 3891.01, change: 0.8708968106366825, ath: 4878, atl: 0.43 },
             pls: { price: 8.9e-05, change: 12.4, ath: 0.000456, atl: 2.1e-05 },
             hex: { price: 0.0041, change: 8.7, ath: 0.5701, atl: 0.00019 },
-            usdt: { price: 0.9999, change: 0.013151574206464341, ath: 1.32, atl: 0.57 },
-            dai: { price: 1.0, change: -0.17673859353278557, ath: 1.22, atl: 0.89 }
+            usdt: { price: 0.999913, change: 0.014450412005411244, ath: 1.32, atl: 0.57 },
+            dai: { price: 1.001, change: -0.12040593476246625, ath: 1.22, atl: 0.89 }
         };
-    
-
-    // Render prices into the table
-    document.getElementById("btc-price").textContent = realTimePrices.btc.price.toFixed(2);
-    document.getElementById("btc-change").textContent = realTimePrices.btc.change.toFixed(1);
-    document.getElementById("btc-ath").textContent = realTimePrices.btc.ath;
-    document.getElementById("btc-atl").textContent = realTimePrices.btc.atl;
-
-    document.getElementById("eth-price").textContent = realTimePrices.eth.price.toFixed(2);
-    document.getElementById("eth-change").textContent = realTimePrices.eth.change.toFixed(1);
-    document.getElementById("eth-ath").textContent = realTimePrices.eth.ath;
-    document.getElementById("eth-atl").textContent = realTimePrices.eth.atl;
-
-    document.getElementById("pls-price").textContent = realTimePrices.pls.price.toFixed(6);
-    document.getElementById("pls-change").textContent = realTimePrices.pls.change.toFixed(1);
-    document.getElementById("pls-ath").textContent = realTimePrices.pls.ath;
-    document.getElementById("pls-atl").textContent = realTimePrices.pls.atl;
-
-    document.getElementById("hex-price").textContent = realTimePrices.hex.price.toFixed(4);
-    document.getElementById("hex-change").textContent = realTimePrices.hex.change.toFixed(1);
-    document.getElementById("hex-ath").textContent = realTimePrices.hex.ath;
-    document.getElementById("hex-atl").textContent = realTimePrices.hex.atl;
-
-    document.getElementById("usdt-price").textContent = realTimePrices.usdt.price.toFixed(2);
-    document.getElementById("usdt-change").textContent = realTimePrices.usdt.change.toFixed(1);
-    document.getElementById("usdt-ath").textContent = realTimePrices.usdt.ath;
-    document.getElementById("usdt-atl").textContent = realTimePrices.usdt.atl;
-
-    document.getElementById("dai-price").textContent = realTimePrices.dai.price.toFixed(2);
-    document.getElementById("dai-change").textContent = realTimePrices.dai.change.toFixed(1);
-    document.getElementById("dai-ath").textContent = realTimePrices.dai.ath;
-    document.getElementById("dai-atl").textContent = realTimePrices.dai.atl;
-  </script>
-</body>
-</html>
+    </script>
+</body></html>
